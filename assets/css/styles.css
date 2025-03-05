@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --cyan-600: #4D96A9;
+    --cyan-300: #8FE3F9;
+    --purple-600: #855FB1;
+    --purple-300: #D9B8FF;
+    --slate-900: #28283D;
+    --slate-600: #87879D;
+    --slate-300: #D1D1DF;
+    --white: #FAFAFA;
+    --red-hat-display: "Red Hat Display", serif;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    text-align: center;
+    padding: 48px 80px 0 80px;
+}
+
+.hero {
+    padding-top: 64px;
+    overflow: clip;
+}
+
+.hero > .hero-img-smartphone {
+    display: flex;
+    justify-content: center;
+}
+
+.hero > .hero-img-smartphone > .hero-img-small {
+    width: 120%;
+    height: 50%;
+}
+
+.hero-img-desktop-left,
+.hero-img-desktop-right {
+    display: none;
+}
+
+.hero-content {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.hero-content > h1 {
+    font-family: var(--red-hat-display);
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--slate-900);
+    margin-top: 48px;
+    margin-bottom: 24px;
+    padding: 0 20px 0 20px;
+}
+
+.hero-content > p {
+    font-family: var(--red-hat-display);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--slate-600);
+    margin-bottom: 24px;
+}
+
+.hero-content > button {
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 29px;
+    color: white;
+    font-family: var(--red-hat-display);
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-download {
+    background-color: var(--cyan-600);
+    margin-bottom: 16px;
+}
+
+.btn-download > span {
+    color: var(--cyan-300);
+}
+
+.btn-about {
+    background-color: var(--purple-600);
+}
+
+
+@media (width > 767px) {
+    .hero > .hero-img-smartphone > .hero-img-small {
+        width: 120%;
+        height: 100%;
+    }
+
+    .hero-content {
+        margin: auto;
+        max-width: 60%;
+    }
+
+    .hero-content > h1 {
+        font-size: 4.8rem;
+        margin-top: 72px;
+    }
+
+    .btn-download {
+        margin-bottom: 0;
+        margin-right: 17px;
+    }
+}
+
+@media (width > 1023px) {
+    body {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    header {
+        padding: 80px 80px 0 80px;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .hero-content {
+        max-width: 450px;
+    }
+
+    .hero-img-smartphone {
+        display: none !important;
+    }
+
+    .hero-img-desktop-left,
+    .hero-img-desktop-right {
+        display: block;
+    }
+}
+
+@media (width > 1022px) and (width < 1269px) {
+    .btn-download {
+        margin-bottom: 17px;
+        margin-right: 0;
+    }
+}
