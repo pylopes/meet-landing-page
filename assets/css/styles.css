@@ -29,6 +29,7 @@ header {
 
 .hero {
     padding-top: 64px;
+    padding-bottom: 32px;
     overflow: clip;
 }
 
@@ -104,6 +105,144 @@ header {
     background-color: var(--purple-600);
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 32px 32px 64px 32px;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rectangle {
+    width: 1px;
+    height: 80px;
+    background-color: var(--slate-300);
+}
+
+.number > p {
+    width: 56px;
+    height: 56px;
+    color: var(--slate-600);
+    font-family: var(--red-hat-display);
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--slate-300);
+    border-radius: 50%;
+}
+
+.photos {
+    max-width: 100%;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.photos > img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.text-content > h3 {
+    font-family: var(--red-hat-display);
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 110%;
+    letter-spacing: 4px;
+    color: var(--cyan-600);
+    margin-bottom: 16px;
+}
+
+.text-content > h2 {
+    font-family: var(--red-hat-display);
+    font-size: 3.2rem;
+    font-weight: 900;
+    letter-spacing: 0px;
+    line-height: 110%;
+    color: var(--slate-900);
+    margin-bottom: 32px;
+}
+
+.text-content > p {
+    font-family: var(--red-hat-display);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--slate-600);
+}
+
+.text-footer {
+    background: linear-gradient(#4d97a9d7, #4d97a9d7), url(../images/mobile/image-footer.jpg);
+    background-size: cover;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    margin-top: -28px;
+    padding: 64px 32px;
+}
+
+footer > .number > p {
+    background-color: var(--white);
+}
+
+.text-footer > h2 {
+    font-family: var(--red-hat-display);
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 0px;
+    color: var(--white);
+}
+
+.text-footer > p {
+    font-family: var(--red-hat-display);
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.text-footer > button {
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 29px;
+    color: white;
+    font-family: var(--red-hat-display);
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-download-footer {
+    background-color: var(--purple-600);
+    margin-bottom: 16px;
+}
+
+.btn-download-footer > span {
+    color: var(--purple-300);
+}
 
 @media (width > 767px) {
     .hero > .hero-img-smartphone > .hero-img-small {
