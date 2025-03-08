@@ -27,6 +27,10 @@ header {
     padding: 48px 80px 0 80px;
 }
 
+/* MAIN */
+
+/* HERO */
+
 .hero {
     padding-top: 64px;
     padding-bottom: 32px;
@@ -104,6 +108,8 @@ header {
 .btn-about {
     background-color: var(--purple-600);
 }
+
+/* CONTENT */
 
 .content {
     display: flex;
@@ -187,6 +193,8 @@ header {
     color: var(--slate-600);
 }
 
+/* FOOTER */
+
 .text-footer {
     background: linear-gradient(#4d97a9d7, #4d97a9d7), url(../images/mobile/image-footer.jpg);
     background-size: cover;
@@ -246,6 +254,9 @@ footer > .number > p {
 }
 
 @media (width > 767px) {
+
+    /* HERO */
+
     .hero > .hero-img-smartphone > .hero-img-small {
         width: 120%;
         height: 100%;
@@ -266,6 +277,8 @@ footer > .number > p {
         margin-right: 17px;
     }
 
+    /* CONTENT */
+
     .content {
         padding: 56px 32px 64px 32px;
     }
@@ -285,6 +298,8 @@ footer > .number > p {
         max-width: 445px;
         font-size: 3.6rem;
     }
+
+    /* FOOTER */
 
     .text-footer {
         background: linear-gradient(#4d97a9d7, #4d97a9d7), url(../images/tablet/image-footer.jpg);
@@ -313,6 +328,8 @@ footer > .number > p {
         padding: 80px 80px 0 80px;
     }
 
+    /* HERO */
+
     .hero {
         display: flex;
         justify-content: center;
@@ -336,6 +353,8 @@ footer > .number > p {
     .hero-img-desktop-right {
         display: block;
     }
+
+    /* CONTENT */
 
     .content {
         padding: 56px 80px 72px 80px;
@@ -365,6 +384,8 @@ footer > .number > p {
         font-size: 1.8rem;
     }
 
+    /* FOOTER */
+    
     .text-footer {
         background: linear-gradient(#4d97a9d7, #4d97a9d7), url(../images/desktop/image-footer.jpg);
         background-size: cover;

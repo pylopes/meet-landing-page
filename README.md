@@ -10,7 +10,7 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 ### Links
 
-- Live Site URL: [Meet landing page solution]()
+- Live Site URL: [Meet landing page solution](https://pylopes.github.io/meet-landing-page/)
 
 ### Built with
 
