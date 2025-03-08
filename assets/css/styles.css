@@ -189,7 +189,8 @@ header {
 
 .text-footer {
     background: linear-gradient(#4d97a9d7, #4d97a9d7), url(../images/mobile/image-footer.jpg);
-    background-size: cover;    
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,6 +265,42 @@ footer > .number > p {
         margin-bottom: 0;
         margin-right: 17px;
     }
+
+    .content {
+        padding: 56px 32px 64px 32px;
+    }
+
+    .photos {
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .text-content {
+        max-width: 504px;
+    }
+
+    .text-content > h2 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 445px;
+        font-size: 3.6rem;
+    }
+
+    .text-footer {
+        background: linear-gradient(#4d97a9d7, #4d97a9d7), url(../images/tablet/image-footer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .text-footer > h2,
+    .text-footer > p,
+    .text-footer > button {
+        max-width: 504px;
+    }
+
+    .text-footer > h2 {
+        font-size: 3.6rem;
+    }
 }
 
 @media (width > 1023px) {
@@ -287,6 +324,10 @@ footer > .number > p {
         max-width: 450px;
     }
 
+    .hero-content > h1 {
+        font-size: 5.3rem;
+    }
+
     .hero-img-smartphone {
         display: none !important;
     }
@@ -294,6 +335,54 @@ footer > .number > p {
     .hero-img-desktop-left,
     .hero-img-desktop-right {
         display: block;
+    }
+
+    .content {
+        padding: 56px 80px 72px 80px;
+    }
+
+    .content > div {
+        max-width: 1120px;
+    }
+
+    .photos {
+        gap: 32px;
+    }
+
+    .text-content {
+        max-width: 544px !important;
+    }
+    
+    .text-content > h3 {
+        font-size: 1.6rem;
+    }
+
+    .text-content > h2 {
+        font-size: 4rem;
+    }
+
+    .text-content > p {
+        font-size: 1.8rem;
+    }
+
+    .text-footer {
+        background: linear-gradient(#4d97a9d7, #4d97a9d7), url(../images/desktop/image-footer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        text-align: left;
+        padding: 112px 80px;
+    }
+
+    .text-footer > h2 {
+        font-size: 4rem;
+    }
+
+    .text-footer > p {
+        font-size: 1.8rem;
     }
 }
 
